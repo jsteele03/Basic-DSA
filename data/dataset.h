@@ -1,13 +1,9 @@
 #pragma once
-#include <vector>
-#include <unordered_map>
 
 struct Dataset {
-    // Array / String data
-    std::vector<int> array;
-
-    // Graph (adjacency list)
-    std::unordered_map<int, std::vector<int>> graph;
+    int array[10]; // fixed size array
+    int size;      // actual size of the array
 };
 
+// Function to load example data
 Dataset loadDataset();

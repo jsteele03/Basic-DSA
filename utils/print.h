@@ -1,8 +1,10 @@
 #pragma once
-#include <vector>
 #include <iostream>
 
-inline void printVector(const std::vector<int>& v) {
-    for (int x : v) std::cout << x << " ";
+// Print a C-style array
+inline void printArray(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        std::cout << arr[i] << " ";
+    }
     std::cout << "\n";
 }
